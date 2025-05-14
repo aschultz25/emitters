@@ -6,6 +6,7 @@ class Particle {
     this.lifespan = 255
     this.color = color(random(255), random(255), random(255))
     this.size = random(3, 8)
+    this.vel = createVector(random(-1.5, 1.5), random(-2, 0))
   }
 
   applyForce(force) {

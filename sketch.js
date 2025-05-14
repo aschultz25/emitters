@@ -39,10 +39,9 @@ class Emitter {
     }
 
     // add new ones
-    this.particles.push( new Particle(this.x, this.y) )     
+    let newCount = floor(random(0, 3))
+    for (let i = 0; i < newCount; i++) {
+     this.particles.push(new Particle(this.x, this.y))     
   }
 }
-
-function mouseClicked() {
-  emitters.push( new Emitter(mouseX,mouseY) )
 }
